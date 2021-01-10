@@ -45,15 +45,15 @@ https://www.anaconda.com/products/individual#macos
 
 #### Step 3: Test it out!
 
-Open up a terminal
-cd into the directory where you installed Spark, and then ls to get a directory listing.
-Look for a text file we can play with, like README.md or CHANGES.txt
-Enter `pyspark`
-At this point you should have a >>> prompt. If not, double check the steps above.
-Enter `rdd = sc.textFile("README.md")` (or whatever text file you’ve found) Enter `rdd.count()`
-You should get a count of the number of lines in that file! Congratulations, you just ran your first Spark program!
-Enter quit() to exit the spark shell, and close the terminal window
-You’ve got everything set up! Hooray!
+- Open up a terminal
+- cd into the directory where you installed Spark, and then ls to get a directory listing.
+- Look for a text file we can play with, like README.md or CHANGES.txt
+- Enter `pyspark`
+- At this point you should have a >>> prompt. If not, double check the steps above.
+- Enter `rdd = sc.textFile("README.md")` (or whatever text file you’ve found) Enter `rdd.count()`
+- You should get a count of the number of lines in that file! Congratulations, you just ran your first Spark program!
+- Enter quit() to exit the spark shell, and close the terminal window
+- You’ve got everything set up! Hooray!
 
 
 
