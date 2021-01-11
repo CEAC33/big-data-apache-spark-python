@@ -107,7 +107,7 @@ Benefits:
 - Deeper Kubernetes Support
 - Binary File Support
 - SparkGraph - Cypher Query Language
-- ACID support in data lakes with Delta Lake
+- ACID support in data lakes with Delta Lake - https://delta.io/
 
 
 
