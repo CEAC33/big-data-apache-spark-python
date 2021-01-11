@@ -55,5 +55,42 @@ https://www.anaconda.com/products/individual#macos
 - Enter quit() to exit the spark shell, and close the terminal window
 - You’ve got everything set up! Hooray!
 
+### Getting the MovieLens Movie Rating Dataset
 
+- https://grouplens.org/datasets/movielens/
+- http://files.grouplens.org/datasets/movielens/ml-100k.zip
 
+### Ratings histogram example
+
+```python
+from pyspark import SparkConf, SparkContext
+import collections
+
+conf = SparkConf().setMaster("local").setAppName("RatingsHistogram")
+sc = SparkContext(conf = conf)
+
+lines = sc.textFile("ml-100k/u.data")
+ratings = lines.map(lambda x: x.split()[2])
+result = ratings.countByValue()
+
+sortedResults = collections.OrderedDict(sorted(result.items()))
+for key, value in sortedResults.items():
+    print("%s %i" % (key, value))
+```
+
+```
+cd ~/Documents/SparkCourse
+```
+
+```
+spark-submit ratings-counter.py
+```
+
+You should see an output like this:
+```
+1 6110
+2 11370
+3 27145
+4 34174
+5 21201
+```
