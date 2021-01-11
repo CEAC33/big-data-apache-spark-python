@@ -94,3 +94,22 @@ You should see an output like this:
 4 34174
 5 21201
 ```
+
+### What's new in Spark 3?
+
+Deprecation:
+- MLLib is deprecated (sort of) - the one that's based on the RDD interface
+- Python 2 support is deprecated
+
+Benefits:
+- Spark 3 is faster, even 17 times faster than Spark 2
+- GPU instance support
+- Deeper Kubernetes Support
+- Binary File Support
+- SparkGraph - Cypher Query Language
+- ACID support in data lakes with Delta Lake
+
+
+
+
+
