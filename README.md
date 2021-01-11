@@ -41,6 +41,7 @@ log4j.rootCategory=ERROR, console
 #### Step 2: Install Anaconda
 
 Install the latest Anaconda for Python 3 from anaconda.com
+
 https://www.anaconda.com/products/individual#macos
 
 #### Step 3: Test it out!
